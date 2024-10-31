@@ -15,7 +15,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
   <main class="wrapper">
 
     <form class="form__container">
-
+      <h1>Contact Us</h1>
       <div class="name__input">
 
         <div class="first-name">
@@ -43,14 +43,14 @@
       </div>
 
       <p>Query Type <span>*</span></p>
-      <div class="radio__contianer">
+      <div class="radio__container">
         <div class="general">
-          <input type="radio" id="general">
+          <input type="radio" id="general" value="general" name="queryType">
           <label for="general">General Enquiry</label>
         </div>
 
         <div class="support">
-          <input type="radio" id="support">
+          <input type="radio" id="support" value="support" name="queryType">
           <label for="support">Support Request</label>
         </div>
 
@@ -62,7 +62,7 @@
       </div>
 
       <div class="checkbox__container">
-        <input type="checkbox">
+        <input type="checkbox" name="consent">
         <label for="checkbox">I consent to being contacted by the team <span>*</span></label>
       </div>
 
