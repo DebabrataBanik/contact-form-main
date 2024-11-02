@@ -20,6 +20,14 @@
 
 <body>
 
+  <div class="confirmation">
+    <section class="title">
+      <h2>Message Sent!</h2>
+      <img src="assets/images/icon-success-check.svg" alt="success icon">
+    </section>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
   <main class="wrapper">
 
     <form class="form__container">
@@ -28,18 +36,22 @@
 
         <div class="first-name">
           <label for="first-name">First Name <span>*</span></label>
-          <input type="text" name="first name" id="first-name" class="name">
+          <input type="text" name="first name" id="first-name" aria-required="true">
+          <span class="error-msg"></span>
         </div>
+
         <div class="last-name">
           <label for="last-name">Last Name <span>*</span></label>
-          <input type="text" name="last name" id="last-name" class="name">
+          <input type="text" name="last name" id="last-name" aria-required="true">
+          <span class="error-msg"></span>
         </div>
 
       </div>
 
       <div class="email__input">
         <label for="email">Email Address <span>*</span></label>
-        <input type="text" name="email" id="email" class="email">
+        <input type="text" name="email" id="email" aria-required="true">
+        <span class="error-msg"></span>
       </div>
 
       <p>Query Type <span>*</span></p>
@@ -55,18 +67,21 @@
         </div>
 
       </div>
+      <span class="error-msg"></span>
 
       <div class="message__container">
         <label for="message">Message <span>*</span></label>
-        <input type="text" name="message" id="message">
+        <textarea name="message" id="message" aria-required="true"></textarea>
+        <span class="error-msg"></span>
       </div>
 
       <div class="checkbox__container">
-        <input type="checkbox" name="consent">
+        <input type="checkbox" name="consent" id="checkbox" aria-required="true">
         <label for="checkbox">I consent to being contacted by the team <span>*</span></label>
       </div>
+      <span class="error-msg"></span>
 
-      <button class="btn">Submit</button>
+      <button class="btn" aria-label="submit form to being contacted">Submit</button>
 
     </form>
 
