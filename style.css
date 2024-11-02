@@ -236,6 +236,8 @@ button{
 }
 
 .confirmation{
+  width: 85%;
+  max-width: 28rem;
   display: none;
   padding: 2rem 1.5rem;
   background-color: var(--grey-900);
