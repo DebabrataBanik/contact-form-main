@@ -88,11 +88,13 @@ label{
   font-size: var(--fs-labels);
   font-weight: 400;
   pointer-events: none;
+  color: var(--grey-900);
 }
 
 input[type="text"]{
   margin-top: 0.8rem;
   outline: none;
+  color: var(--grey-900);
   height: 3.2rem;
   border-radius: 0.5rem;
   border: 1px solid var(--grey-500);
