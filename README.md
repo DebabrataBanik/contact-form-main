@@ -7,7 +7,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 - [The Challenge](#the-challenge)
 - [Screenshot](#screenshot)
 - [Links](#links)
-- [My Process](#my-process)
 - [Built with](#built-with)
 - [Continued Development](#continued-development)
 
@@ -30,12 +29,9 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://debabratabanik.github.io/contact-form-main/)
+- [Live Site URL]()
 - [Solution URL]()
 
-### My Process
-
-As for my process I will only mention the validation approach I took. I first targeted each input element and took them in separate variables. Then each input was attached with listeners to validate on the go. Created a separate function for error validation to display error messages. And in order to display all errors on submit, created a flag that checks if every entry is valid which finally allows submitting and resetting the form and also displaying the confirmation modal. 
 
 ### Built with
 
@@ -44,8 +40,8 @@ As for my process I will only mention the validation approach I took. I first ta
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- ReactJs
+- React Hook Form
 
 
 ### Continued development
-
-Improve validation approach by refactoring parts of the code. Implement this project using frameworks like React and its integrated libraries. 
