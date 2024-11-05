@@ -12,8 +12,11 @@
   font-family: "Karla", serif;
   box-sizing: border-box;
 }
-
 body{
+  margin: 0;
+}
+
+#root{
   margin: 0;
   background-color: var(--green-200);
   display: flex;
@@ -49,7 +52,6 @@ div span, p span {
 }
 
 .error-msg{
-  display: none;
   margin-top: 0.5rem;
   color: var(--red);
   font-size: 0.9rem;
@@ -87,7 +89,7 @@ div span, p span {
 label{
   font-size: var(--fs-labels);
   font-weight: 400;
-  pointer-events: none;
+  /* pointer-events: none; */
   color: var(--grey-900);
 }
 
@@ -238,7 +240,6 @@ button{
 .confirmation{
   width: 85%;
   max-width: 28rem;
-  display: none;
   padding: 2rem 1.5rem;
   background-color: var(--grey-900);
   border-radius: 1rem;
@@ -262,12 +263,9 @@ button{
     font-size: 1.2rem;
   }
 }
-.confirmation.display{
-  display: block;
-}
 
 @media (min-width: 768px){
-  body{
+  #root{
     padding-block: 4rem;
   }
   .wrapper{
