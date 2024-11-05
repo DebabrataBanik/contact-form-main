@@ -112,7 +112,7 @@ function App() {
                 labelPosi="right"
 
                 {
-                ...register('queryType', { required: 'Select a query type' })
+                ...register('queryType', { required: 'Please select a query type' })
                 }
               />
             </div>
@@ -162,7 +162,7 @@ function App() {
               labelPosi="right"
               aria-required="true"
               {
-              ...register('checkbox', { required: 'Please consent on being contacted' })
+              ...register('checkbox', { required: 'Please consent to being contacted' })
               }
             />
           </div>
