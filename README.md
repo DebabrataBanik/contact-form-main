@@ -8,6 +8,7 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Built with](#built-with)
+- [My Process](#my-process)
 - [Continued Development](#continued-development)
 
 ### The Challenge
@@ -25,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](design/desktop-preview.jpg)
+![alt text](contact_form_using_react/design/desktop-preview.jpg)
 
 ### Links
 
@@ -43,5 +44,20 @@ Users should be able to:
 - ReactJs
 - React Hook Form
 
+### My Process 
 
-### Continued development
+**Input, Textarea, and Confirmation Toast**
+
+In this project, separate components have been created for Input, Textarea, and ConfirmationToast to maintain modularity and reusability. Each child component utilizes forwardRef to expose its control to the parent component, allowing the parent to directly manage their behavior.
+
+**Form Validation with react-hook-form**
+
+The form validation is handled using the react-hook-form library, which simplifies the validation process and manages form states efficiently. The errors generated during form validation are passed down to the child components, enabling them to render error messages with the desired styling.
+
+**Confirmation Toast**
+
+An isValid state variable is used to determine if the form submission is successful. When the form is validated and submitted correctly, the confirmation toast is displayed to inform the user of a successful action.
+
+### Continued Development
+
+Try using other frameworks or libraries for validation. 
