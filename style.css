@@ -235,21 +235,28 @@ button{
   }
 }
 
-.confirmation{
+.confirmation {
   width: 85%;
-  max-width: 28rem;
-  display: none;
+  max-width: 28.5rem;
   padding: 2rem 1.5rem;
   background-color: var(--grey-900);
   border-radius: 1rem;
   color: white;
-  margin-bottom: -0.5rem;
   z-index: 10;
 
-  & > p{
-    color: var(--grey-500);
-  }
+  position: absolute;
+  top: 0.5rem; 
+  transform: translateY(-200%); 
+  visibility: hidden;
+  transition: all 0.5s ease-out;
 }
+
+.confirmation.display {
+  transform: translateY( 0); 
+  visibility: visible;
+}
+
+
 .title{
   display: flex;
   flex-direction: row-reverse;
@@ -262,13 +269,10 @@ button{
     font-size: 1.2rem;
   }
 }
-.confirmation.display{
-  display: block;
-}
 
 @media (min-width: 768px){
   body{
-    padding-block: 4rem;
+    padding-block: 6rem;
   }
   .wrapper{
     padding: 2.5rem;
