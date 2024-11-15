@@ -28,7 +28,7 @@ function App() {
   return (
     <>
 
-      {isValid && <Confirmation />}
+      {isValid && <Confirmation isValid={isValid} />}
 
       <main className="wrapper">
 
@@ -134,7 +134,11 @@ function App() {
             </div>
 
           </div>
-          <span className="error-msg">{errors.queryType && errors.queryType.message}</span>
+          {
+            errors.queryType && (
+              <span className="error-msg">{errors.queryType.message}</span>
+            )
+          }
 
           <div className="message__container">
             <div className="message__container">
@@ -166,7 +170,11 @@ function App() {
               }
             />
           </div>
-          <span className="error-msg">{errors.checkbox && errors.checkbox.message}</span>
+          {
+            errors.checkbox && (
+              <span className="error-msg">{errors.checkbox.message}</span>
+            )
+          }
 
           <button className="btn" type='submit' aria-label="submit form to being contacted">Submit</button>
 
