@@ -57,6 +57,13 @@ The form validation is handled using the react-hook-form library, which simplifi
 
 An isValid state variable is used to determine if the form submission is successful. When the form is validated and submitted correctly, the confirmation toast is displayed to inform the user of a successful action.
 
+**Modal Animation**
+
+Use `useEffect` when you want to delay or control the sequence of actions, such as animations, after the component has been rendered or after some state change.
+
+Without useEffect, React adds the display class immediately during the initial render. The browser doesn’t have time to apply the starting styles `(translateY(-200%), opacity: 0)` before the transition starts, so it "snaps" into position.
+By delaying the display class addition using useEffect, it ensures that the animation has a proper starting point before it begins.
+
 ### Continued Development
 
 Try using other frameworks or libraries for validation. 
